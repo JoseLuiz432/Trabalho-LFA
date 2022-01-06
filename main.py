@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-from Entrada_Saida import Entrada_Saida
-from Af import Af
+from entrada_saida import Entrada_Saida
+from af import Af
 
 
-class Vision(object):
+class Main(object):
 
     @staticmethod
     def main():
@@ -15,7 +15,7 @@ class Vision(object):
                     ######################################################
                     #                Automatos Finitos                   #
                     #version jflap:                                      #
-                    #Leituro: JFLAP8(beta) e JFLAP7                      #
+                    #Leitura: JFLAP8(beta) e JFLAP7                      #
                     #Escrita: JFLAP7                                     #
                     ######################################################
               """)
@@ -57,9 +57,11 @@ class Vision(object):
 
                     print('Transicoes: ')
                 while True:
+
                     print('##################################################################')
                     print('#Construcao %s #' %auto)
                     print('##################################################################')
+                    print('-----------------criar de transição------------')
                     source = input('Informe o estado source: ')
                     target = input('Informe o estado target: ')
                     consume = input('informe o consume: ')
@@ -333,4 +335,4 @@ class Vision(object):
 
 
 if __name__ == "__main__":
-    Vision.main()
+    Main.main()

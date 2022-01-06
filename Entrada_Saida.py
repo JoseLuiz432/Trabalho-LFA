@@ -2,7 +2,7 @@
 import xml.etree.cElementTree as ET
 from xml.etree.cElementTree import ElementTree
 from xml.dom import minidom
-from Af import Af
+from af import Af
 
 
 class Entrada_Saida(object):
